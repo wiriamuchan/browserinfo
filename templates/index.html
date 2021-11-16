@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+    <html class="index_page">
+      <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"/>
+        <script src="{{ url_for('static',filename='button_scripts.js') }}"></script>
+      </head>
+      <body>
+        <div id="my_container">
+          {% include "header.html" %}
+          <p>Hello, this is browserin.fo!</p>
+          <p>You can use this tool to find your browser version and device information, and IP address. Click the button to get started.</p>
+          
+          <button class="button" onclick="window.location.href='/test'">Click here!</button>
+
+          <p>After you click to get your info, you can share the information by clicking to copy the information, or you can copy the link to the page.</p>
+          <p id="credits">will erickson @ co-dub-2021 hack week</p>
+        </div>
+        {% include "corner_links.html" %}
+        <script src="{{ url_for('static',filename='bg_script.js') }}"></script>
+      </body>
+    </html>

@@ -1,0 +1,112 @@
+@font-face{
+    font-family: Clarkson;
+    src: url(/static/clarkson-500.woff2);
+}
+
+/* background-color:tan; */
+/* background-color: coral;  */
+/* background-color: cornflowerblue; */
+
+body {
+    font-family:Clarkson;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+#my_container {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.45));
+    width: 550px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+#my_container p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: bold;
+}
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+#buttons, #header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#id_field {
+    font-size:10px;
+}
+
+#ip_field, #uas {
+    font-size:30px;
+}
+
+#browser_field {
+    font-size: 50px;
+    margin: 10px;
+}
+
+#corner_info {
+    background-color: rgba(255, 255, 255, 0.45);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 16px;
+    border-radius: 5px;
+}
+#corner_info:hover {
+    background: white;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+    transform: scale(1.05);
+    filter: blur(0px);
+}
+#corner_info a{
+    margin: 10px;
+}
+
+button {
+    font-family: Clarkson;
+    border-radius: 1em;
+    display: block;
+    background: rgba(255, 255, 255, 0.6);
+    margin: 0px auto;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    filter: blur(0.2px);
+}
+
+button:hover {
+    background: white;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+    transform: scale(1.05);
+    filter: blur(0px);
+}
+
+#credits {
+    font-size: 12px;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 0px !important;
+}

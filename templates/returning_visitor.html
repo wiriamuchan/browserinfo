@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+  <html class="returning_visitor_page">
+    <head>
+      <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+      <script src="{{ url_for('static',filename='button_scripts.js') }}"></script>
+    </head>
+    <body>
+      <div id="my_container">
+        {% include "header.html" %}
+        <p>Welcome back!</p>
+        {% include "result_data.html" %}
+        {% include "buttons.html" %}
+        <div id="browserinfo_string">
+          {% include "result_string.html" %}
+        </div>
+      </div>
+      {% include "corner_links.html" %}
+    <script src="{{ url_for('static',filename='bg_script.js') }}"></script>
+    </body>
+  </html>
